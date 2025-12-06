@@ -45,7 +45,7 @@ sudo dnf install steam
 
 # For Arch, Manjaro, EndeavourOS
 sudo pacman -S steam
-```
+````
 ---
 
 ### Step 2: Enable Proton (The Magic)
