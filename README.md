@@ -65,8 +65,6 @@ Your Steam library will now show **all your games**, including Windows ones. Ins
 
 ## ⚡ Essential Pre-Checks
 
----
-
 ### 1. The NTFS Warning ⚠️
 
 If you're **dual-booting with Windows**, **do not install games on an NTFS drive**.
@@ -85,7 +83,6 @@ If you have an **NVIDIA GPU**, you absolutely need the **proprietary drivers** f
 # First, check what driver you're using:
 nvidia-smi
 ```
----
 
 If the command fails or shows "Nouveau," install the proper driver:
 
@@ -99,9 +96,10 @@ sudo dnf install akmod-nvidia
 # For Arch
 sudo pacman -S nvidia nvidia-utils
 ```
----
 
 Reboot after installing the proprietary drivers to apply the changes.
+
+---
 
 ### 3. Verify Vulkan Support
 Vulkan is the crucial, modern graphics API that Proton relies on for high performance. You must ensure its libraries are installed and functional.
@@ -111,7 +109,6 @@ Check for Vulkan:
 # Check if Vulkan is working (you may need to install 'vulkan-tools' first)
 vulkaninfo | grep "GPU id"
 ```
----
 
 Install Vulkan drivers if missing:
 ```bash
@@ -124,10 +121,8 @@ sudo dnf install vulkan
 # For Arch
 sudo pacman -S vulkan-icd-loader mesa
 ```
----
-
-#🐧 Choosing Your Linux Distribution
-This is not a big decision! Here's a quick comparison based on gaming ease and user experience to help you pick your starting point. You almost do everything in each distro, the method and ease might vary though
+# 🐧 Choosing Your Linux Distribution
+This is not a big decision! Here's a quick comparison based on gaming ease and user experience to help you pick your starting point. You almost do everything in each distro, the method and ease might vary though, then there also distro-hopping
 
 | Distribution | Suitability | Best For... | Package Manager |
 | :--- | :--- | :--- | :--- |
@@ -140,3 +135,33 @@ This is not a big decision! Here's a quick comparison based on gaming ease and u
 | **Kali** | ❌ Not Recommended | A security toolkit, not a daily-use OS. | APT |
 
 > Our Recommendation: If you're new and just want to game, start with Nobara or Pop!_OS.
+
+# 🧰 Gaming Outside of Steam
+
+**##Heroic Games Launcher (For Epic, GOG, Amazon)**
+The easiest way to manage games from other stores.
+
+```bash
+# Install via Flatpak (Recommended for most distros)
+flatpak install flathub com.heroicgameslauncher.hgl
+```
+
+**##Lutris (The Universal Game Manager)**
+> __not maintained anymore, hence not recommended but still works 😀👍_
+
+A powerful tool that can install and configure games from almost any source.
+```bash
+# Ubuntu/Debian
+sudo apt install lutris
+# Fedora
+sudo dnf install lutris
+# Arch
+sudo pacman -S lutris
+```
+
+**##Wine-GE / Proton-GE**
+Community-enhanced versions of Wine/Proton that often fix more games. You can install them easily via ProtonUp-Qt or Heroic Launcher's built-in Wine manager.
+
+---
+
+> _to be added *🚀 Performance Optimization Tips*_
