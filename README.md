@@ -129,15 +129,14 @@ sudo pacman -S vulkan-icd-loader mesa
 #🐧 Choosing Your Linux Distribution
 This is not a big decision! Here's a quick comparison based on gaming ease and user experience to help you pick your starting point. You almost do everything in each distro, the method and ease might vary though
 
-|
-Distribution | Suitability | Best For... | Package Manager |
+| Distribution | Suitability | Best For... | Package Manager |
 | :--- | :--- | :--- | :--- |
-| **Nobara** |	🏆 Best (Official) |	A seamless, gaming-first experience. |	DNF
-|**Pop!_OS** |	🥈 Excellent |	Top-notch NVIDIA support out-of-the-box. |	APT
-| **Ubuntu / Mint** |	✅ Very Good	Stability and the largest help community. |	APT
-|**Fedora** |	✅ Very Good	Cutting-edge software with good support. |	DNF
-|**Arch / Endeavour** |	⚙️ Good (Advanced)	Users who love control and the latest packages. |	Pacman
-|**Debian**|	🐢 Good (Stable) |	Rock-solid stability over newer features. |	APT
-|**Kali** |	❌ Not Recommended |	A security toolkit, not a daily-use OS. |APT |
+| **Nobara** | 🏆 Best (Official) | A seamless, gaming-first experience. | DNF |
+| **Pop!_OS** | 🥈 Excellent | Top-notch NVIDIA support out-of-the-box. | APT |
+| **Ubuntu / Mint** | ✅ Very Good | Stability and the largest help community. | APT |
+| **Fedora** | ✅ Very Good | Cutting-edge software with good support. | DNF |
+| **Arch / Endeavour** | ⚙️ Good (Advanced) | Users who love control and the latest packages. | Pacman |
+| **Debian** | 🐢 Good (Stable) | Rock-solid stability over newer features. | APT |
+| **Kali** | ❌ Not Recommended | A security toolkit, not a daily-use OS. | APT |
 
 > Our Recommendation: If you're new and just want to game, start with Nobara or Pop!_OS.
