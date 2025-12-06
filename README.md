@@ -36,6 +36,8 @@ Follow these steps **in order** for the highest chance of success.
 
 Open your terminal and run the command for your distribution:
 
+---
+
 ```bash
 # For Ubuntu, Debian, Linux Mint, Pop!_OS
 sudo apt update && sudo apt install steam
