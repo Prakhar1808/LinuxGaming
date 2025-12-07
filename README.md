@@ -147,7 +147,7 @@ flatpak install flathub com.heroicgameslauncher.hgl
 ```
 
 **##Lutris (The Universal Game Manager)**
-> __not maintained anymore, hence not recommended but still works 😀👍_
+> _not maintained anymore, hence not recommended but still works 😀👍_
 
 A powerful tool that can install and configure games from almost any source.
 ```bash
