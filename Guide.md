@@ -1,6 +1,6 @@
 # 🎮 The Complete Linux Gaming Guide
 
-> _Still under active work, but the core paths work! Tread with excitement._
+> _Still under active work, but the core paths work! Tread with caution._
 
 A **comprehensive, beginner-friendly guide** to gaming on Linux—whether you use **Arch, Debian, Ubuntu, Fedora, or anything else**. Covers everything from native games to running Windows titles.
 
@@ -164,4 +164,42 @@ Community-enhanced versions of Wine/Proton that often fix more games. You can in
 
 ---
 
-> _to be added *🚀 Performance Optimization Tips*_
+# 🚀 Performance Optimization Tips
+
+## Enable GameMode
+
+### GameMode is a daemon that optimizes system performance while a game is running.
+
+```bash
+# Install it
+# Ubuntu/Debian
+sudo apt install gamemode
+# Install the 'gamemode' package for your distro...
+
+# Enable it for a Steam game:
+# Right-click game > Properties > LAUNCH OPTIONS
+# Add this text:
+gamemoderun %command%
+```
+## Use MangoHud (Performance Overlay)
+
+### A fantastic overlay to monitor FPS, temps, and usage.
+
+```bash
+# Install MangoHud
+# Ubuntu/Debian
+sudo apt install mangohud
+# ...and for your distro
+
+# Use it with GameMode in Steam's Launch Options:
+gamemoderun mangohud %command%
+```
+
+## For Laptops with NVIDIA Hybrid Graphics
+> _If you have an NVIDIA Optimus laptop, use this in the Steam Launch Options to ensure the game uses the powerful NVIDIA GPU:_
+
+```bash
+__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia %command%
+```
+
+> _upcoming: ⚙️ Graphics Drivers Deep Dive_
