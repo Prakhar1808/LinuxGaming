@@ -201,5 +201,21 @@ gamemoderun mangohud %command%
 ```bash
 __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia %command%
 ```
+## ⚙️ Graphics Drivers 
+Having the correct, up-to-date graphics driver is the most important factor for performance and compatibility.
 
-> _upcoming: ⚙️ Graphics Drivers Deep Dive_
+### NVIDIA
+> _usually a headache but thinks can be easier if you know you gpu archeticheture_
+arch wiki [https://wiki.archlinux.org/title/NVIDIA] has this table which makes it easy to find out the gpu drivers best suited for your gpu, all the way from curie to latest gpus 5000 series at the time of writing this
+
+Use the proprietary driver from NVIDIA, not the open-source Nouveau driver.
+
+Install the latest driver suitable for your GPU (like the nvidia-driver-545 example above).
+
+Check for updates periodically, especially before installing a new, demanding game.
+
+### AMD & Intel
+>_easy to do unlike NVIDIA_
+Use the open-source mesa drivers. They are excellent and usually pre-installed.
+
+For the absolute latest Mesa drivers on Ubuntu/Debian, consider adding the Kisak PPA.
