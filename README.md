@@ -6,6 +6,7 @@ A **comprehensive, beginner-friendly guide** to gaming on Linux—whether you us
 
 **Goal**: To create the definitive, distribution-agnostic resource that helps your friends and classmates play their favorite games on Linux.
 
+>_before going deep into the linux gaming rabbit hole, check if your device has all the functionality working on the flavour of your rebellious penguin, EG: fans don't work properly on few HP-Omens (i own one of them sadly)_
 ---
 
 ## 🌟 Why Game on Linux?
@@ -13,6 +14,9 @@ A **comprehensive, beginner-friendly guide** to gaming on Linux—whether you us
 Gaming on Linux has never been easier. Thanks to massive strides in compatibility layers like **Proton** and **Wine**, most Windows games now run with little to no tinkering. This guide is designed to get you from zero to gaming as quickly and painlessly as possible.
 
 **You're in good hands**.
+
+>_Some games just deny to run at all due to Kernel Level Anti-Cheats like Valorant
+there are absolutely no way to run them natively or through any compatibility layer as of now_
 
 ---
 
@@ -195,12 +199,15 @@ sudo apt install mangohud
 gamemoderun mangohud %command%
 ```
 
+>_you can also use an app like "Goverlay" to configure mangohud according to your needs (recommended), just make sure to install the flatpak mangohud and Goverlay in that case_
+
 ## For Laptops with NVIDIA Hybrid Graphics
-> _If you have an NVIDIA Optimus laptop, use this in the Steam Launch Options to ensure the game uses the powerful NVIDIA GPU:_
+> _If you have an NVIDIA Optimus laptop, use this in the Steam Launch Options to ensure the game uses the NVIDIA GPU:_
 
 ```bash
 __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia %command%
 ```
+
 ## ⚙️ Graphics Drivers 
 Having the correct, up-to-date graphics driver is the most important factor for performance and compatibility.
 
