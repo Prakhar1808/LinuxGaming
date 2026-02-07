@@ -6,7 +6,7 @@ A **comprehensive, beginner-friendly guide** to gaming on Linux—whether you us
 
 **Goal**: To create the definitive, distribution-agnostic resource that helps your friends and classmates play their favorite games on Linux.
 
->_before going deep into the linux gaming rabbit hole, check if your device has all the functionality working on the flavour of your rebellious penguin, EG: fans don't work properly on few HP-Omens (i own one of them sadly)_
+>_before going deep into the linux gaming rabbit hole, check if your device has all the functionality working on the flavour of your rebellious penguin, EG: fans don't work properly on few HP-Omens (i own one of them sadly) UPDATE: (a month later) fans can be sped up now! kernal updates for the win!_
 ---
 
 ## 🌟 Why Game on Linux?
@@ -142,7 +142,7 @@ This is not a big decision! Here's a quick comparison based on gaming ease and u
 
 # 🧰 Gaming Outside of Steam
 
-**##Heroic Games Launcher (For Epic, GOG, Amazon)**
+## Heroic Games Launcher (For Epic, GOG, Amazon)
 The easiest way to manage games from other stores.
 
 ```bash
@@ -150,7 +150,7 @@ The easiest way to manage games from other stores.
 flatpak install flathub com.heroicgameslauncher.hgl
 ```
 
-**##Lutris (The Universal Game Manager)**
+## Lutris (The Universal Game Manager)
 > _not maintained anymore, hence not recommended but still works 😀👍_
 
 A powerful tool that can install and configure games from almost any source.
@@ -163,7 +163,7 @@ sudo dnf install lutris
 sudo pacman -S lutris
 ```
 
-**##Wine-GE / Proton-GE**
+## Wine-GE / Proton-GE
 Community-enhanced versions of Wine/Proton that often fix more games. You can install them easily via ProtonUp-Qt or Heroic Launcher's built-in Wine manager.
 
 ---
@@ -208,11 +208,11 @@ gamemoderun mangohud %command%
 __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia %command%
 ```
 
-## ⚙️ Graphics Drivers 
+## ⚙️ Graphics Drivers
 Having the correct, up-to-date graphics driver is the most important factor for performance and compatibility.
 
 ### NVIDIA
-> _usually a headache but thinks can be easier if you know you gpu archeticheture_
+> _usually a headache but things can be easier if you know you gpu archeticheture_
 arch wiki [https://wiki.archlinux.org/title/NVIDIA] has this table which makes it easy to find out the gpu drivers best suited for your gpu, all the way from curie to latest gpus 5000 series at the time of writing this
 
 Use the proprietary driver from NVIDIA, not the open-source Nouveau driver.
@@ -226,3 +226,18 @@ Check for updates periodically, especially before installing a new, demanding ga
 Use the open-source mesa drivers. They are excellent and usually pre-installed.
 
 For the absolute latest Mesa drivers on Ubuntu/Debian, consider adding the Kisak PPA.
+
+## Fan Control
+### Essential Tools and Techniques
++ **lm-sensors (Command Line):**
+The foundational package to detect hardware sensors (sudo sensors-detect) and read temperatures/fan speeds (sensors).
++ **fancontrol (Command Line):**
+Requires pwmconfig to map fans to sensors, followed by editing /etc/fancontrol for customized curves.
+
++ **[CoolerControl](https://docs.coolercontrol.org) (GUI):** (RECOMMENDED!)
+A comprehensive application for monitoring and controlling fans on Linux, supporting custom profiles and cooling curves, even for Nvidia GPUs on Wayland.
+
++ **Fan Control (GUI - Flathub):**
+A dedicated GUI tool to monitor sensor data in real-time and create custom fan behaviors.
++ Thinkfan: Specifically for Lenovo ThinkPads.
++ i8kutils: For Dell laptops.
